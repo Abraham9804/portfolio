@@ -25,21 +25,24 @@ const HeaderStyles = styled.header`
         }
         a{
             font-weight: 400;
-            color: white;
+            color: black;
             text-decoration: none;
             font-size: 18px;
         }
     }
 
-    .hide-icon{
-        display: none;
-    }
+    
 
     @media screen and (max-width: 600px){
         .menu-icon{
             display: block;
             cursor: pointer;
-            
+        }
+
+        .hide-icon{
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            position: absolute;
         }
 
         .nav-responsive{
@@ -53,8 +56,23 @@ const HeaderStyles = styled.header`
             }
         }
 
+        .show{
+            opacity: 1;
+            transform: translateY(0);
+            transition:  opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .show-icon{
+            opacity: 1;
+            transition:  opacity 0.3s ease-in-out;
+        }
+
         .hide-element{
-            display: none;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            position: absolute;
+            
         }
     }
 `
@@ -68,16 +86,16 @@ const Header = () => {
     return (
         <HeaderStyles>
             <div className="logo">
-                <IoCodeSlash color="rgba(94 234 212/1)" fontSize={50}/>
+                <IoCodeSlash color="black" fontSize={50}/>
             </div>
 
             <div >
-                <SlMenu className={menuHamburguesa?"hide-icon":"menu-icon"} color="rgba(94 234 212/1)" fontSize={50} onClick={ ()=> setMenuHamburguesa(!menuHamburguesa)}/>
-                <IoMdClose className={menuHamburguesa?"menu-icon":"hide-icon"} color="rgba(94 234 212/1)" fontSize={50} onClick={ ()=> setMenuHamburguesa(!menuHamburguesa)}/>
+                <SlMenu className={menuHamburguesa?"menu-icon hide-icon":"menu-icon show-icon"} color="#615151" fontSize={40} onClick={ ()=> setMenuHamburguesa(!menuHamburguesa)}/>
+                <IoMdClose className={menuHamburguesa?"menu-icon show-icon":"menu-icon hide-icon"} color="#615151" fontSize={50} onClick={ ()=> setMenuHamburguesa(!menuHamburguesa)}/>
             </div>
         
 
-            <nav className={menuHamburguesa?"nav-responsive":"hide-element"}>
+            <nav className={menuHamburguesa?"nav-responsive show":"nav-responsive hide-element"}>
                 <ul>
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">Skills</a></li>

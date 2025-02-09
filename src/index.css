@@ -1,3 +1,10 @@
+:root{
+  --color-primario: rgba(94 234 212/1);
+  --background-banner: #f5f6f7;
+  --background-banner2: rgba(15 23 42 / 1);
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +12,17 @@
 }
 
 body{
-  background-color: rgba(15 23 42 / 1);
-  font-family: "Roboto", serif;
+  background-color: var(--background-banner); 
+  font-family: "Roboto", sans-serif;
+}
+
+.titulo-section{
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
+.contenedor-section{
+  text-align: center;
+  padding-top: 100px;
 }
