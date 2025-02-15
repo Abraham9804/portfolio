@@ -1,5 +1,8 @@
 import styled from "styled-components"
 import imagen from "./img.png"
+import { FaLinkedin } from "react-icons/fa";
+import { GrDocumentPdf } from "react-icons/gr";
+
 const BannerStyles = styled.section`
     height: 650px;
     display: flex;
@@ -18,7 +21,7 @@ const BannerStyles = styled.section`
             color: black;
             font-size: 2.5rem;
             font-weight: 500;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         p{
@@ -26,6 +29,11 @@ const BannerStyles = styled.section`
             color: #615151;
             font-weight: 500;
             line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        a{
+            padding: 15px 5px;
         }
     }
 
@@ -45,7 +53,9 @@ const Banner = () => {
     return <BannerStyles>
                 <div className="contenedor-text">
                     <h2 className="titulo-section">Hola, soy Abraham Romero</h2>
-                    <p>Web developer</p>
+                    <p>Web developer</p> 
+                    <a href="https://www.linkedin.com/in/abraham-romero9804/" title="Ver perfil de Linkedin" target="_blank"><FaLinkedin color={"#0A66C2"} fontSize={40}/></a>
+                    <a href="/Romero_Abraham_CV_2025.pdf" title="Ver CV" target="_blank"><GrDocumentPdf  color={"#D32F2F"} fontSize={40}/></a>
                 </div>
                 <div className="contenedor-imagen">
                     <img src={imagen} alt="img"/>
