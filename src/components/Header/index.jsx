@@ -49,7 +49,7 @@ const HeaderStyles = styled.header`
             display: block;
             position: absolute;
             top: 100px;
-            width: 100%;
+            width: 80%;
             ul{
                 flex-direction: column;
                 align-items: center;

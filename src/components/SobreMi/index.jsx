@@ -1,12 +1,10 @@
 import styled from "styled-components"
 
 const SobreMiStyles = styled.section`
-    width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-color: #262626;
-    padding: 130px 32px;
-    text-align: center;
-
+    padding-top: 130px;
+    padding-bottom: 130px;
     div{
         max-width: 600px;
         margin: auto;
@@ -14,11 +12,14 @@ const SobreMiStyles = styled.section`
         p, h3{
             color: white;
         }
+        
+        h3{
+            margin-bottom: 10px;
+        }
 
         p{
             font-size: 1.2rem;
             line-height: 26px;
-            
         }
     }
 `
@@ -26,7 +27,7 @@ const SobreMiStyles = styled.section`
 
 const SobreMi = () => {
     return (
-    <SobreMiStyles>
+    <SobreMiStyles className="contenedor-section">
         <div>
             <h3 className="titulo-section">Sobre Mi</h3>
             <p>Soy un desarrollador web con experiencia en la creación de aplicaciones dinámicas y eficientes. Mi especialidad es el backend con PHP y MySQL, 

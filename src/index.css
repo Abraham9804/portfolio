@@ -4,6 +4,9 @@
   --background-banner2: rgba(15 23 42 / 1);
 }
 
+#root{
+  width: 100%;
+}
 
 *{
   margin: 0;
@@ -14,15 +17,18 @@
 body{
   background-color: var(--background-banner); 
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 .titulo-section{
   font-size: 2rem;
   font-weight: 500;
-  padding-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .contenedor-section{
   text-align: center;
-  padding-top: 100px;
+  width: 100%;
+  margin-bottom: 100px;
+  padding: 10px 32px;
 }
