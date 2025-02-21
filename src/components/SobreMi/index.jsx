@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const SobreMiStyles = styled.section`
     min-height: 500px;
-    background-color: #262626;
+    background-color: black;
     padding-top: 130px;
     padding-bottom: 130px;
     div{

@@ -2,6 +2,7 @@ import styled from "styled-components"
 import imagen from "./img.png"
 import { FaLinkedin } from "react-icons/fa";
 import { GrDocumentPdf } from "react-icons/gr";
+import { IoIosMailOpen } from "react-icons/io"; 
 
 const BannerStyles = styled.section`
     height: 650px;
@@ -26,7 +27,7 @@ const BannerStyles = styled.section`
 
         p{
             font-size: 1.5rem;
-            color: #615151;
+            color: rgba(74, 85, 104, 1);
             font-weight: 500;
             line-height: 1.2;
             margin-bottom: 10px;
@@ -54,8 +55,7 @@ const Banner = () => {
                 <div className="contenedor-text">
                     <h2 className="titulo-section">Hola, soy Abraham Romero</h2>
                     <p>Web developer</p> 
-                    <a href="https://www.linkedin.com/in/abraham-romero9804/" title="Ver perfil de Linkedin" target="_blank"><FaLinkedin color={"#0A66C2"} fontSize={40}/></a>
-                    <a href="/Romero_Abraham_CV_2025.pdf" title="Ver CV" target="_blank"><GrDocumentPdf  color={"#D32F2F"} fontSize={40}/></a>
+                    
                 </div>
                 <div className="contenedor-imagen">
                     <img src={imagen} alt="img"/>

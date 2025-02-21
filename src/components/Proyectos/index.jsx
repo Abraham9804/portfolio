@@ -7,9 +7,9 @@ const ProyectosStyled = styled.section`
     .contenedor-proy{
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content:center;
         flex-wrap: wrap;
-        gap: 60px 15px;
+        gap: 60px 60px;
     }
 `
 

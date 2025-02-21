@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { FaPhp } from "react-icons/fa";
 import { TbBrandPhp } from "react-icons/tb";
 import { SiMysql } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
