@@ -56,19 +56,14 @@ const CardProyectosStyled = styled.article`
             opacity: 0;
             z-index: 1000;
             position: relative;
-            top: -200px;
+            top: -150px;
             transform: translate(-0%, -50%) translateY(20px);
             transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
             a{
                 color: black;
                 padding: 15px;
             }
-            p{
-                font-size: 2rem;
-                padding-bottom: 10px;
-                font-weight: 500;
-                color: white;
-            }
+            
         }
     }
 
@@ -87,6 +82,7 @@ const CardProyectosStyled = styled.article`
                 color: rgba(74, 85, 104, 1);
                 font-size: 1.25rem;
                 line-height: 1.625;
+                margin-bottom: 8px;
             }
             
             p{
@@ -96,40 +92,38 @@ const CardProyectosStyled = styled.article`
         }
 
         .contenedor-badges{
+            display: flex;
+            flex-wrap: wrap;
             span{
                 background-color: rgba(229, 231, 235,1);
                 color: rgba(74,85,104, 1);
                 padding: 4px 12px;
                 border-radius: 50px;
-                margin-right: 8px;
+                margin: 8px 8px 8px 0px;
             }
         }
     }
-
-
-    
 `
 
-const CardProyecto = ({titulo, imagen, urlGit, urlDeploy}) => {
+const CardProyecto = ({titulo, imagen, urlGit, urlDeploy, descripcion, badges}) => {
     return (
         <CardProyectosStyled>
             <div className="contenedor-img-iconos">
                 <img src={imagen} />
                 <div className="contenedor-iconos">
-                    <p>{titulo}</p>
-                    <a href={urlGit}><FaGithub size={70} color="white"/></a> 
-                    <a href={urlDeploy}><FaLaptopCode size={70} color="white"/></a>
+                    <a href={urlGit} target="_blank" title="Ver repositorio"><FaGithub size={70} color="white"/></a> 
+                    <a href={urlDeploy} target="_blank" title="Ver proyecto desplegado"><FaLaptopCode size={70} color="white"/></a>
                 </div>
             </div>
             <div className="contenedor-texto-badges">
                 <div className="contenedor-texto">
-                    <h3>Titulo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, 
-                        nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
+                    <h3>{titulo}</h3>
+                    <p>{descripcion}</p>
                 </div>
                 <div className="contenedor-badges">
-                    <span>Badge</span>
-                    <span>Badge</span>
+                    {badges.map(badge => {
+                        return <span key={badge}>{badge}</span>
+                    })}
                 </div>
             </div>
         </CardProyectosStyled>

@@ -24,35 +24,45 @@ const Proyectos = () => {
                     titulo="Encriptador" 
                     imagen={imgEncriptador}
                     urlGit="https://github.com/Abraham9804/encriptador" 
-                    urlDeploy="https://abraham9804.github.io/encriptador/" >
+                    urlDeploy="https://abraham9804.github.io/encriptador/" 
+                    descripcion="Encriptador de texto realizado en el curso de Oracle One Next Education"
+                    badges={['JavaScript','HTML','CSS']}>
                 </CardProyecto>
 
                 <CardProyecto 
-                    titulo="Encriptador" 
+                    titulo="Sistema de logistica" 
                     imagen={imgLogistica}
                     urlGit="https://github.com/Abraham9804/encriptador" 
-                    urlDeploy="https://abraham9804.github.io/encriptador/" >
+                    urlDeploy="https://abraham9804.github.io/encriptador/" 
+                    descripcion="Modulo de logistica creado en sistema ERP, con funciones de inventario, recibo de material y salidas"
+                    badges={['PHP','MySQL','JavaScript','HTML','CSS','JQuery','Bootstrap']}>
                 </CardProyecto>
 
                 <CardProyecto 
                     titulo="Encriptador" 
                     imagen={imgSistemad}
                     urlGit="https://github.com/Abraham9804/encriptador" 
-                    urlDeploy="https://abraham9804.github.io/encriptador/" >
+                    urlDeploy="https://abraham9804.github.io/encriptador/"
+                    descripcion="Modulo de logistica creado en sistema ERP"
+                    badges={['JavaScript','HTML','CSS']}>
                 </CardProyecto>
 
                 <CardProyecto 
                     titulo="Encriptador" 
                     imagen={imgSistemad}
                     urlGit="https://github.com/Abraham9804/encriptador" 
-                    urlDeploy="https://abraham9804.github.io/encriptador/" >
+                    urlDeploy="https://abraham9804.github.io/encriptador/" 
+                    descripcion="Modulo de logistica creado en sistema ERP"
+                    badges={['JavaScript','HTML','CSS']}>
                 </CardProyecto>
 
                 <CardProyecto 
                     titulo="Encriptador" 
                     imagen={imgSistemad}
                     urlGit="https://github.com/Abraham9804/encriptador" 
-                    urlDeploy="https://abraham9804.github.io/encriptador/" >
+                    urlDeploy="https://abraham9804.github.io/encriptador/" 
+                    descripcion="Modulo de logistica creado en sistema ERP"
+                    badges={['JavaScript','HTML','CSS']}>
                 </CardProyecto>
 
                 
