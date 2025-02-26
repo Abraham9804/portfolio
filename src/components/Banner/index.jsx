@@ -27,7 +27,7 @@ const BannerStyles = styled.section`
 
         p{
             font-size: 1.5rem;
-            color: rgba(74, 85, 104, 1);
+            color: rgba(74, 85, 104, 1);    
             font-weight: 500;
             line-height: 1.2;
             margin-bottom: 10px;
@@ -44,10 +44,7 @@ const BannerStyles = styled.section`
         img{
         width: 100%;
         }
-    }
-   
-    
-    
+    }  
 `
 
 const Banner = () => {
@@ -55,7 +52,7 @@ const Banner = () => {
                 <div className="contenedor-text">
                     <h2 className="titulo-section">Hola, soy Abraham Romero</h2>
                     <p>Web developer</p> 
-                    
+                    <FaLinkedin size={40}/> <GrDocumentPdf size={40}/> <IoIosMailOpen size={40}/>
                 </div>
                 <div className="contenedor-imagen">
                     <img src={imagen} alt="img"/>

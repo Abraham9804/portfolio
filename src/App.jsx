@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Footer from "./components/Footer"
+import FormContacto from "./components/FormContacto"
 import Header from "./components/Header"
 import Proyectos from "./components/Proyectos"
 import Skills from "./components/Skills"
@@ -15,6 +16,7 @@ function App() {
      <SobreMi/>
      <Skills/>
      <Proyectos/>
+     <FormContacto/>
      <Footer/>
     </>
   )
