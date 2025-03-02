@@ -5,8 +5,7 @@ import { FaLaptopCode } from "react-icons/fa";
 const CardProyectosStyled = styled.article`
         max-width: 400px;
         min-width: 300px;
-        height: 500px;
-        //min-height: 400px;
+        height: 600px;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
     .contenedor-img-iconos{
@@ -101,6 +100,16 @@ const CardProyectosStyled = styled.article`
                 border-radius: 50px;
                 margin: 8px 8px 8px 0px;
             }
+        }
+    }
+
+    @media screen and (max-width:490px) {
+        .contenedor-img-iconos{
+            height: 40%;
+        }
+
+        .contenedor-texto-badges{
+            height: 60%;
         }
     }
 `

@@ -30,9 +30,14 @@ const SobreMi = () => {
     <SobreMiStyles className="contenedor-section">
         <div>
             <h3 className="titulo-section">Sobre Mi</h3>
-            <p>Soy un desarrollador web con experiencia en la creación de aplicaciones dinámicas y eficientes. Mi especialidad es el backend con PHP y MySQL, 
-            donde me enfoco en la optimización y administración de bases de datos. También tengo habilidades en el desarrollo frontend, utilizando JavaScript, React, HTML, 
-            CSS, Bootstrap y jQuery para crear interfaces interactivas y responsivas.</p>
+            <p>Soy un programador web con un año de experiencia en el desarrollo de aplicaciones web,
+            con enfoque en el uso de tecnologías como PHP, MySQL, JavaScript y herramientas
+            frontend como HTML, CSS, Bootstrap y React. He trabajado en la creación y
+            mantenimiento de módulos y funcionalidades dentro de un sistema ERP, así como en la
+            optimización de bases de datos y la implementación de funcionalidades interactivas. Estoy
+            comprometido con el aprendizaje continuo y con la mejora de mis habilidades, buscando
+            siempre aprender nuevas tecnologías y enfoques para resolver problemas de manera
+            eficiente.</p>
         </div>
         
     </SobreMiStyles>

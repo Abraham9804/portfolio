@@ -8,20 +8,35 @@ const FormContactoStyles = styled.section`
         display:flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+            0 -4px 6px rgba(0, 0, 0, 0.1), 
+            4px 0 6px rgba(0, 0, 0, 0.1), 
+            -4px 0 6px rgba(0, 0, 0, 0.1);
+        padding-top: 50px;
+        border-radius: 10px;
         div{
             width:80%;
             text-align: left;
+
             label{
                 display: block;
                 margin-bottom: 10px;
                 color: rgba(74, 85, 104, 1);
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.625;
             }
+
             input, textarea {
                 width: 100%;
                 padding: 15px 10px;
                 border-radius: 10px;
                 margin-bottom: 25px;
+                border: 1px solid rgba(74, 85, 104, .3);
+            }
+
+            input:focus, textarea:focus{
+                outline:2px solid rgba(74, 85, 104, .3);
             }
 
             textarea{
@@ -35,6 +50,14 @@ const FormContactoStyles = styled.section`
             color: white;
             border-radius: 10px;
             margin-bottom: 50px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        input[type=submit]:hover{
+            transform: scale(1.05); 
         }
        
     }
