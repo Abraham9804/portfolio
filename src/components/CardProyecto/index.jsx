@@ -93,6 +93,8 @@ const CardProyectosStyled = styled.article`
         .contenedor-badges{
             display: flex;
             flex-wrap: wrap;
+            align-items: end;
+            height: 50%;
             span{
                 background-color: rgba(229, 231, 235,1);
                 color: rgba(74,85,104, 1);

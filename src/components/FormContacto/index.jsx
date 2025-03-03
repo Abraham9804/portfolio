@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components"
 
 const FormContactoStyles = styled.section`
@@ -64,25 +65,54 @@ const FormContactoStyles = styled.section`
 `
 
 const FormContacto = () => {
+    function handlesubmit(e){
+        e.preventDefault();
+        console.log('form enviado', nombre, ' ',correo,' ',asunto, ' ', mensaje)
+        formValidate()
+    }
+
+    const [nombre, setNombre] = useState("");
+    const [correo, setCorreo] = useState("");
+    const [asunto, setAsunto] = useState("");
+    const [mensaje, setMensaje] = useState("");
+
+    const [errores, setErrores] = useState({
+        nombre: "",
+        correo: "",
+        asunto: "",
+        mensaje: ""
+    });
+
+    function formValidate(){
+        const errorsTemp = {}
+
+        if(nombre.trim() === ""){
+            errorsTemp.nombre = "El nombre es obligatorio"
+        }
+
+        setErrores(errorsTemp)
+    }
+    
+
     return (
         <FormContactoStyles className="contenedor-section">
             <h3 className="titulo-section">Contactame</h3>
-            <form >
+            <form onSubmit={handlesubmit}>
                 <div>
                     <label htmlFor="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre"/>
+                    <input type="text" name="nombre" id="nombre" placeholder={errores.nombre ? errores.nombre : "Introduzca su nombre"} onChange={(e)=> setNombre(e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="nombre">Correo</label>
-                    <input type="email" name="correo" id="correo"/>
+                    <input type="email" name="correo" id="correo" onChange={(e)=> setCorreo(e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="nombre">Asunto</label>
-                    <input type="text" name="asunto" id="asunto"/>
+                    <input type="text" name="asunto" id="asunto" onChange={(e)=> setAsunto(e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <textarea name="mensaje" id="mensaje" onChange={(e)=> setMensaje(e.target.value)}></textarea>
                 </div>
                 
                 <input type="submit" value="Enviar" id="btnEnviar"/>
