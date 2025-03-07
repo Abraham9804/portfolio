@@ -2,13 +2,13 @@ import styled from "styled-components"
 import { FaGithub } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 
-const CardProyectosStyled = styled.article`
+const ProjectCardStyled = styled.article`
         max-width: 400px;
         min-width: 300px;
         height: 600px;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
-    .contenedor-img-iconos{
+    .icon-image-container{
         width: 100%;
         height: 48%;
         cursor: pointer;
@@ -46,12 +46,12 @@ const CardProyectosStyled = styled.article`
             opacity: 1;
         }
 
-        &:hover .contenedor-iconos {
+        &:hover .icons-container {
             opacity: 1;
             transform: translateY(0);
         }
 
-        .contenedor-iconos{
+        .icons-container{
             opacity: 0;
             z-index: 1000;
             position: relative;
@@ -66,16 +66,16 @@ const CardProyectosStyled = styled.article`
         }
     }
 
-    .contenedor-texto-badges{
+    .text-badges-container{
         width: 100%;
         height: 52%;
 
-        .contenedor-texto, .contenedor-badges{
+        .text-container, .badges-container{
             text-align: left;
             padding: 16px 21px;
         }
 
-        .contenedor-texto {
+        .text-container {
             h3{
                 font-weight: 700;
                 color: rgba(74, 85, 104, 1);
@@ -90,7 +90,7 @@ const CardProyectosStyled = styled.article`
             }
         }
 
-        .contenedor-badges{
+        .badges-container{
             display: flex;
             flex-wrap: wrap;
             align-items: end;
@@ -106,39 +106,39 @@ const CardProyectosStyled = styled.article`
     }
 
     @media screen and (max-width:490px) {
-        .contenedor-img-iconos{
+        .icon-image-container{
             height: 40%;
         }
 
-        .contenedor-texto-badges{
+        .text-badges-container{
             height: 60%;
         }
     }
 `
 
-const CardProyecto = ({titulo, imagen, urlGit, urlDeploy, descripcion, badges}) => {
+const ProjectCard = ({tittle, image, urlGit, urlDeploy, description, badges}) => {
     return (
-        <CardProyectosStyled>
-            <div className="contenedor-img-iconos">
-                <img src={imagen} />
-                <div className="contenedor-iconos">
+        <ProjectCardStyled>
+            <div className="icon-image-container">
+                <img src={image} />
+                <div className="icons-container">
                     <a href={urlGit} target="_blank" title="Ver repositorio"><FaGithub size={70} color="white"/></a> 
                     <a href={urlDeploy} target="_blank" title="Ver proyecto desplegado"><FaLaptopCode size={70} color="white"/></a>
                 </div>
             </div>
-            <div className="contenedor-texto-badges">
-                <div className="contenedor-texto">
-                    <h3>{titulo}</h3>
-                    <p>{descripcion}</p>
+            <div className="text-badges-container">
+                <div className="text-container">
+                    <h3>{tittle}</h3>
+                    <p>{description}</p>
                 </div>
-                <div className="contenedor-badges">
+                <div className="badges-container">
                     {badges.map(badge => {
                         return <span key={badge}>{badge}</span>
                     })}
                 </div>
             </div>
-        </CardProyectosStyled>
+        </ProjectCardStyled>
     )
 }
 
-export default CardProyecto
+export default ProjectCard

@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FaFilePdf } from "react-icons/fa6";
 import cv from "/Abraham_Romero_CV_2025.pdf"
+import IconContact from "../IconContact";
 
 
 const BannerStyles = styled.section`
@@ -38,15 +39,6 @@ const BannerStyles = styled.section`
         a{
             padding: 15px 5px;
         }
-
-        .estilos-iconos{
-            cursor: pointer;
-            transition: transform 0.25s ease-in-out;
-        }
-
-        .estilos-iconos:hover{
-            transform: scale(1.2);
-        }
     }
 
     .contenedor-imagen{
@@ -63,16 +55,9 @@ const Banner = () => {
                 <div className="contenedor-text">
                     <h2 className="titulo-section">Hola, soy Abraham Romero</h2>
                     <p>Web developer</p> 
-                    <a href="https://www.linkedin.com/in/abraham-romero9804" target="_blank">
-                        <FaLinkedin size={45} color={"#0077B5"} className="estilos-iconos"/> 
-                    </a>
-                    <a href="https://github.com/Abraham9804" target="_blank">
-                        <IoLogoGithub size={45} color={"black"} className="estilos-iconos"/>
-                    </a>
-                    <a href={cv} target="_blank">
-                        <FaFilePdf size={45} color={"#df2222"} className="estilos-iconos"/>
-                    </a>
-                    
+                    <IconContact color="#0077B5" Icon={FaLinkedin} url="https://www.linkedin.com/in/abraham-romero9804"/>
+                    <IconContact color="black" Icon={IoLogoGithub} url="https://github.com/Abraham9804"/>
+                    <IconContact color="#df2222" Icon={FaFilePdf} url={cv}/>
                 </div>
                 <div className="contenedor-imagen">
                     <img src={imagen} alt="img"/>

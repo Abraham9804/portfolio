@@ -47,6 +47,7 @@ const FormContactoStyles = styled.section`
 
             textarea{
                 min-height: 150px;
+                resize: none;
             }
 
             .texto-error{

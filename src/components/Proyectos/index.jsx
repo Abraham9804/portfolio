@@ -1,10 +1,12 @@
 import styled from "styled-components"
-import CardProyecto from "../CardProyecto"
+import ProjectCard from "../Projects"
 import imgLogistica from "./logistica.png"
 import imgEncriptador from "./encriptador.png"
 import imgSistemad from "./sistemad.png"
-const ProyectosStyled = styled.section`
-    .contenedor-proy{
+
+const ProjectsStyled = styled.section`
+
+    .project-container{
         display: flex;
         flex-direction: row;
         justify-content:center;
@@ -14,61 +16,61 @@ const ProyectosStyled = styled.section`
 `
 
 
-const Proyectos = () => {
+const Projects = () => {
     return (
-        <ProyectosStyled className="contenedor-section">
-            <h3 className="titulo-section">Proyectos</h3>
+        <ProjectsStyled className="contenedor-section">
+            <h3 className="tittle-section">Proyectos</h3>
 
-            <div className="contenedor-proy">
-                <CardProyecto 
-                    titulo="Encriptador" 
-                    imagen={imgEncriptador}
+            <div className="project-container">
+                <ProjectCard 
+                    tittle="Encriptador" 
+                    image={imgEncriptador}
                     urlGit="https://github.com/Abraham9804/encriptador" 
                     urlDeploy="https://abraham9804.github.io/encriptador/" 
-                    descripcion="Encriptador de texto realizado en el curso de Oracle One Next Education"
+                    description="Encriptador de texto realizado en el curso de Oracle One Next Education"
                     badges={['JavaScript','HTML','CSS']}>
-                </CardProyecto>
+                </ProjectCard>
 
-                <CardProyecto 
-                    titulo="Sistema de logistica" 
-                    imagen={imgLogistica}
+                <ProjectCard 
+                    tittle="Sistema de logistica" 
+                    image={imgLogistica}
                     urlGit="https://github.com/Abraham9804/encriptador" 
                     urlDeploy="https://abraham9804.github.io/encriptador/" 
-                    descripcion="Modulo de logistica creado en sistema ERP, con funciones de inventario, recibo de material y salidas"
+                    description="Modulo de logistica creado en sistema ERP, con funciones de inventario, recibo de material y salidas"
                     badges={['PHP','MySQL','JavaScript','HTML','CSS','JQuery','Bootstrap']}>
-                </CardProyecto>
+                </ProjectCard>
 
-                <CardProyecto 
-                    titulo="Encriptador" 
-                    imagen={imgSistemad}
+                <ProjectCard 
+                    tittle="Encriptador" 
+                    image={imgSistemad}
                     urlGit="https://github.com/Abraham9804/encriptador" 
                     urlDeploy="https://abraham9804.github.io/encriptador/"
-                    descripcion="Modulo de logistica creado en sistema ERP"
+                    description="Modulo de logistica creado en sistema ERP"
                     badges={['JavaScript','HTML','CSS']}>
-                </CardProyecto>
+                </ProjectCard>
 
-                <CardProyecto 
-                    titulo="Encriptador" 
-                    imagen={imgSistemad}
+                <ProjectCard 
+                    tittle="Encriptador" 
+                    image={imgSistemad}
                     urlGit="https://github.com/Abraham9804/encriptador" 
                     urlDeploy="https://abraham9804.github.io/encriptador/" 
-                    descripcion="Modulo de logistica creado en sistema ERP"
+                    description="Modulo de logistica creado en sistema ERP"
                     badges={['JavaScript','HTML','CSS']}>
-                </CardProyecto>
+                </ProjectCard>
 
-                <CardProyecto 
-                    titulo="Encriptador" 
-                    imagen={imgSistemad}
+                <ProjectCard 
+                    tittle="Encriptador" 
+                    image={imgSistemad}
                     urlGit="https://github.com/Abraham9804/encriptador" 
                     urlDeploy="https://abraham9804.github.io/encriptador/" 
-                    descripcion="Modulo de logistica creado en sistema ERP"
+                    description="Modulo de logistica creado en sistema ERP"
                     badges={['JavaScript','HTML','CSS']}>
-                </CardProyecto>
+                </ProjectCard>
 
                 
             </div>
-        </ProyectosStyled>
+        </ProjectsStyled>
     )
 }
 
-export default Proyectos 
+export default Projects 
