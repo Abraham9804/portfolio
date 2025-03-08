@@ -79,7 +79,8 @@ const HeaderStyles = styled.header`
 
 const Header = () => {
 
-    const [menuHamburguesa, setMenuHamburguesa] = useState(false)
+    const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
 
     
 
@@ -90,12 +91,12 @@ const Header = () => {
             </div>
 
             <div >
-                <SlMenu className={menuHamburguesa?"menu-icon hide-icon":"menu-icon show-icon"} color="#615151" fontSize={40} onClick={ ()=> setMenuHamburguesa(!menuHamburguesa)}/>
-                <IoMdClose className={menuHamburguesa?"menu-icon show-icon":"menu-icon hide-icon"} color="#615151" fontSize={50} onClick={ ()=> setMenuHamburguesa(!menuHamburguesa)}/>
+                <SlMenu className={hamburgerMenu?"menu-icon hide-icon":"menu-icon show-icon"} color="#615151" fontSize={40} onClick={ ()=> setHamburgerMenu(!hamburgerMenu)}/>
+                <IoMdClose className={hamburgerMenu?"menu-icon show-icon":"menu-icon hide-icon"} color="#615151" fontSize={50} onClick={ ()=> setHamburgerMenu(!hamburgerMenu)}/>
             </div>
         
 
-            <nav className={menuHamburguesa?"nav-responsive show":"nav-responsive hide-element"}>
+            <nav className={hamburgerMenu?"nav-responsive show":"nav-responsive hide-element"}>
                 <ul>
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">Skills</a></li>

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const SobreMiStyles = styled.section`
+const AboutMeStyles = styled.section`
     min-height: 500px;
     background-color: black;
     padding-top: 130px;
@@ -25,11 +25,11 @@ const SobreMiStyles = styled.section`
 `
 
 
-const SobreMi = () => {
+const AboutMe = () => {
     return (
-    <SobreMiStyles className="contenedor-section">
+    <AboutMeStyles className="section-container">
         <div>
-            <h3 className="titulo-section">Sobre Mi</h3>
+            <h3 className="section-tittle">Sobre Mi</h3>
             <p>Soy un programador web con un año de experiencia en el desarrollo de aplicaciones web,
             con enfoque en el uso de tecnologías como PHP, MySQL, JavaScript y herramientas
             frontend como HTML, CSS, Bootstrap y React. He trabajado en la creación y
@@ -40,8 +40,8 @@ const SobreMi = () => {
             eficiente.</p>
         </div>
         
-    </SobreMiStyles>
+    </AboutMeStyles>
     )
 }
 
-export default SobreMi
+export default AboutMe

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import imagen from "./img.png"
+import image from "./img.png"
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FaFilePdf } from "react-icons/fa6";
@@ -15,13 +15,13 @@ const BannerStyles = styled.section`
     flex-direction: column;
     padding-top: 250px;
     width: 100%; 
-    .contenedor-text{
+    .container-text{
         text-align: center;
         padding-bottom: 100px;
         padding-left: 32px;
         padding-right: 32px;
 
-        .titulo-section{
+        .section-tittle{
             color: black;
             font-size: 2.5rem;
             font-weight: 500;
@@ -41,7 +41,7 @@ const BannerStyles = styled.section`
         }
     }
 
-    .contenedor-imagen{
+    .container-image{
         max-width: 600px;
         min-width: 300px;
         img{
@@ -52,15 +52,15 @@ const BannerStyles = styled.section`
 
 const Banner = () => {
     return <BannerStyles>
-                <div className="contenedor-text">
-                    <h2 className="titulo-section">Hola, soy Abraham Romero</h2>
+                <div className="container-text">
+                    <h2 className="section-tittle">Hola, soy Abraham Romero</h2>
                     <p>Web developer</p> 
                     <IconContact color="#0077B5" Icon={FaLinkedin} url="https://www.linkedin.com/in/abraham-romero9804"/>
                     <IconContact color="black" Icon={IoLogoGithub} url="https://github.com/Abraham9804"/>
                     <IconContact color="#df2222" Icon={FaFilePdf} url={cv}/>
                 </div>
-                <div className="contenedor-imagen">
-                    <img src={imagen} alt="img"/>
+                <div className="container-image">
+                    <img src={image} alt="img"/>
                 </div> 
             </BannerStyles>
 }

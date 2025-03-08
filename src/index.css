@@ -20,13 +20,13 @@ body{
   width: 100%;
 }
 
-.titulo-section{
+.section-tittle{
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 60px;
 }
 
-.contenedor-section{
+.section-container{
   text-align: center;
   width: 100%;
   margin-bottom: 100px;

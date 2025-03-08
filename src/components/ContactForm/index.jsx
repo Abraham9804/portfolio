@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components"
 
-const FormContactoStyles = styled.section`
+const ContactFormStyles = styled.section`
 
     form{
         margin: auto auto;
@@ -77,7 +77,7 @@ const FormContactoStyles = styled.section`
     }
 `
 
-const FormContacto = () => {
+const ContactForm = () => {
     const campos = ['nombre', 'correo', 'asunto', 'mensaje'];
     const [errores, setErrores] = useState({});
     const [formData, setFormData] = useState({
@@ -87,7 +87,6 @@ const FormContacto = () => {
         mensaje: ""
     })
     
-
     function handlesubmit(e){
         e.preventDefault()
         if(formValidate()){
@@ -102,10 +101,6 @@ const FormContacto = () => {
         const {name, value} = e.target
         setFormData({...formData, [name]:value})
     }
-
-    
-
-    
 
     function formValidate(){
         const errorsTemp = {}
@@ -133,8 +128,8 @@ const FormContacto = () => {
     }
     
     return (
-        <FormContactoStyles className="contenedor-section">
-            <h3 className="titulo-section">Contactame</h3>
+        <ContactFormStyles className="section-container">
+            <h3 className="section-tittle">Contactame</h3>
             <form onSubmit={handlesubmit} noValidate>
                 {
                     campos.map(campo =>
@@ -157,8 +152,8 @@ const FormContacto = () => {
                
                 <input type="submit" value="Enviar" id="btnEnviar"/>
             </form>
-        </FormContactoStyles>
+        </ContactFormStyles>
     )
 }
 
-export default FormContacto
+export default ContactForm

@@ -1,10 +1,10 @@
 import Banner from "./components/Banner"
 import Footer from "./components/Footer"
-import FormContacto from "./components/FormContacto"
+import ContactForm from "./components/ContactForm"
 import Header from "./components/Header"
-import Projects from "./components/Proyectos"
+import Projects from "./components/Projects"
 import Skills from "./components/Skills"
-import SobreMi from "./components/SobreMi"
+import AboutMe from "./components/AboutMe"
 
 
 function App() {
@@ -13,10 +13,10 @@ function App() {
     <>
      <Header/>
      <Banner/>
-     <SobreMi/>
+     <AboutMe/>
      <Skills/>
      <Projects/>
-     <FormContacto/>
+     <ContactForm/>
      <Footer/>
     </>
   )

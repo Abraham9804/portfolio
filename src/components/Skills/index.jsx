@@ -11,7 +11,7 @@ import IconSkill from "../IconSkill";
 
 const SkillsStyled = styled.section`
 
-    .contenedor-iconos{
+    .container-icons{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -20,11 +20,11 @@ const SkillsStyled = styled.section`
 
 const Skills = () => {
     return (
-        <SkillsStyled className="contenedor-section">
+        <SkillsStyled className="section-container">
             <div>
-                <h3 className="titulo-section">Skills</h3>
+                <h3 className="section-tittle">Skills</h3>
             </div>
-            <div className="contenedor-iconos">
+            <div className="container-icons">
                 <IconSkill title="PHP" color="#777BB4" Icon={TbBrandPhp}/>
                 <IconSkill title="MySQL" color="#4479A1" Icon={SiMysql}/>
                 <IconSkill title="JavaScript" color="#F7DF1E" Icon={IoLogoJavascript}/>
@@ -34,8 +34,6 @@ const Skills = () => {
                 <IconSkill title="Bootstrap" color="#7952B3" Icon={TbBrandBootstrap}/>
                 <IconSkill title="GIT" color="#F05032" Icon={FaGitAlt}/>
             </div>
-
-           
         </SkillsStyled>
     )
 }
