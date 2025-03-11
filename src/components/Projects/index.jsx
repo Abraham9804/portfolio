@@ -18,7 +18,7 @@ const ProjectsStyled = styled.section`
 
 const Projects = () => {
     return (
-        <ProjectsStyled className="section-container">
+        <ProjectsStyled className="section-container" id="projects">
             <h3 className="section-tittle">Proyectos</h3>
 
             <div className="project-container">

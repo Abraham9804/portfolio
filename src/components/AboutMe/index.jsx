@@ -27,7 +27,7 @@ const AboutMeStyles = styled.section`
 
 const AboutMe = () => {
     return (
-    <AboutMeStyles className="section-container">
+    <AboutMeStyles className="section-container" id="about">
         <div>
             <h3 className="section-tittle">Sobre Mi</h3>
             <p>Soy un programador web con un año de experiencia en el desarrollo de aplicaciones web,

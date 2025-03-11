@@ -15,6 +15,7 @@ const BannerStyles = styled.section`
     flex-direction: column;
     padding-top: 250px;
     width: 100%; 
+    
     .container-text{
         text-align: center;
         padding-bottom: 100px;

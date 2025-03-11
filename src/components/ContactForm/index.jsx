@@ -128,7 +128,7 @@ const ContactForm = () => {
     }
     
     return (
-        <ContactFormStyles className="section-container">
+        <ContactFormStyles className="section-container" id="contact">
             <h3 className="section-tittle">Contactame</h3>
             <form onSubmit={handlesubmit} noValidate>
                 {

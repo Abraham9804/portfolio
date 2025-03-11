@@ -20,7 +20,7 @@ const SkillsStyled = styled.section`
 
 const Skills = () => {
     return (
-        <SkillsStyled className="section-container">
+        <SkillsStyled className="section-container" id="skills">
             <div>
                 <h3 className="section-tittle">Skills</h3>
             </div>
