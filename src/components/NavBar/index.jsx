@@ -11,6 +11,8 @@ const NavBarStyles = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
 `
 
 const MenuIcon = styled.div`

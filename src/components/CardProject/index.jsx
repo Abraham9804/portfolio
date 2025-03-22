@@ -72,7 +72,7 @@ const CardProjectStyled = styled.article`
 
         .text-container, .badges-container{
             text-align: left;
-            padding: 16px 21px;
+            padding: 8px 21px;
         }
 
         .text-container {
@@ -93,14 +93,15 @@ const CardProjectStyled = styled.article`
         .badges-container{
             display: flex;
             flex-wrap: wrap;
+            justify-content: start;
             align-items: end;
-            height: 50%;
+            min-height: 100px;
             span{
                 background-color: rgba(229, 231, 235,1);
                 color: rgba(74,85,104, 1);
                 padding: 4px 12px;
-                border-radius: 50px;
-                margin: 8px 8px 8px 0px;
+                border-radius: 12px;
+                margin-right: 8px;
             }
         }
     }
